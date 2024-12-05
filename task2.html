@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 2</title>
+    <script>
+        function factorial(number)
+         {
+            let result = 1;
+            while (number > 1)
+             {
+                result *= number--;
+            }
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write("Факториал числа 3 равен: " + factorial(3) + "<br>");
+        document.write("Факториал числа 2 равен: " + factorial(2) + "<br>");
+        document.write("Факториал числа 5 равен: " + factorial(5) + "<br>"); // 0! = 1
+    </script>
+</body>
+</html>

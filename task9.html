@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 9</title>
+    <script>
+        function secInTime(sec)
+         {
+            var hrs = Math.floor(sec / 3600); 
+            sec %= 3600;                        
+            var min = Math.floor(sec / 60);   
+            sec %= 60;                         
+            var hrsStr = (hrs < 10) ? "0" + hrs : hrs;
+            var minStr = (min < 10) ? "0" + min : min;
+            var secStr = (sec < 10) ? "0" + sec : sec;
+            return hrsStr + ":" + minStr + ":" + secStr;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write(secInTime(3661) + "<br>");
+        document.write(secInTime(59) + "<br>");
+        document.write(secInTime(3600) + "<br>");
+    </script>
+</body>
+</html>

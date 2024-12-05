@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 4</title>
+    <script>
+        function calcArea(length, width) 
+        {
+            if (width === undefined) 
+            {
+                return length * length;
+            } else {
+                return length * width;
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write("Площадь квадрата со стороной 8: " + calcArea(8) + "<br>");
+        document.write("Площадь прямоугольника 5x3: " + calcArea(5, 3) + "<br>");
+        document.write("Площадь квадрата со стороной 10: " + calcArea(10) + "<br>");
+    </script>
+</body>
+</html>

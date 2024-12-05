@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 6</title>
+    <script>
+        function isPerfectNum(number)
+        {
+            let sum = 0;
+            for (let i = 1; i < number; i++)
+            {
+                if (number % i === 0) 
+                {
+                    sum += i;
+                }
+            }
+            return sum === number;
+        }
+        function printPerfectNum(min, max) 
+        {
+            for (let i = min; i <= max; i++) 
+            {
+                if (isPerfectNum(i))
+                {
+                    document.write(i + " является совершенным числом.<br>");
+                }
+            }
+        }
+    </script>
+    
+</head>
+<body>
+    <script>
+        printPerfectNum(1, 500); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 5</title>
+    <script>
+        function isPerfectNum(number) 
+        {
+            let sum = 0;
+            for (let i = 1; i < number; i++) 
+            {
+                if (number % i === 0)
+                {
+                    sum += i;
+                }
+            }
+            return sum === number;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        document.write("Является ли число 6 совершенным? " + isPerfectNum(6) + "<br>");
+        document.write("Является ли число 496 совершенным? " + isPerfectNum(496) + "<br>"); 
+        document.write("Является ли число 10 совершенным? " + isPerfectNum(10) + "<br>"); 
+    </script>
+</body>
+</html>
